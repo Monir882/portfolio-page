@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | Home</title>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="vh-100 bg-dark text-light">
+            <div id="homeSlider" class="carousel slide h-100" data-bs-ride="carousel">
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner h-100">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active h-100">
+                        <img src="image/slide1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                            <h1 class="fw-bold display-4">
+                                Hello, I'm <span class="text-info">S M MONIR HOSSAIN</span>
+                            </h1>
+                            <p class="lead">Web Developer | Freelancer | Designer</p>
+                            <div class="text-center mt-4">
+                                <a href="about.html" class="btn btn-info mt-1 px-4 rounded-pill ">Learn More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item h-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1661422064703-e3c75d7b2291?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlZWxhbmNpbmd8ZW58MHx8MHx8fDA%3D"
+                            class="d-block w-100 h-100 object-fit-cover" alt="">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item h-100">
+                        <img src="https://images.stockcake.com/public/a/e/4/ae449ec5-7fc3-4007-9555-d2096ed1b4ed_large/developer-s-workspace-setup-stockcake.jpg"
+                            class="d-block w-100 h-100 object-fit-cover" alt="">
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- Services Preview -->
+        <h2 class="fw-bold text-center mt-5 mb-4">My Services</h2>
+        <section class="py-5 bg-secondary mt-5">
+            <div class="container">
+
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <h4>Web Development</h4>
+                                <p>Build modern and responsive websites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <h4>UI/UX Design</h4>
+                                <p>Creative and user-friendly interface design.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <h4>SEO Optimization</h4>
+                                <p>Rank your site on Google search results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="services.html" class="btn btn-info mt-1 px-4 rounded-pill ">Learn More</a>
+            </div>
+        </section>
+        <!-- ========== CLIENT FEEDBACK ========== -->
+        <section id="feedback" class="py-3">
+            <div class="container">
+                <h2 class="fw-bold text-center py-5">Client Feedback</h2>
+
+                <div class="row g-4 text-center">
+
+                    <!-- Client A -->
+                    <div class="col-md-4">
+                        <div
+                            class="shadow p-4 rounded bg-success text-white h-100 d-flex flex-column align-items-center">
+                            <img src="image/client.jpg" class="rounded-circle mb-3 img-fluid"
+                                style="width:200px; height:200px;" alt="Client A">
+                            <p class="mb-2">"Amazing work! Delivered before the deadline. Highly satisfied."</p>
+                            <h6 class="fw-bold">Client A</h6>
+                        </div>
+                    </div>
+
+                    <!-- Client B -->
+                    <div class="col-md-4">
+                        <div
+                            class="shadow p-4 rounded bg-success text-white h-100 d-flex flex-column align-items-center">
+                            <img src="image/clint imagess.jpeg" class="rounded-circle mb-3 img-fluid"
+                                style="width:200px; height:200px;" alt="Client B">
+                            <p class="mb-2">"Very professional and excellent communication. Highly recommended."</p>
+                            <h6 class="fw-bold">Client B</h6>
+                        </div>
+                    </div>
+
+                    <!-- Client C -->
+                    <div class="col-md-4">
+                        <div
+                            class="shadow p-4 rounded bg-success text-white h-100 d-flex flex-column align-items-center">
+                            <img src="image/clint.ong.jpeg" class="rounded-circle mb-3 img-fluid"
+                                style="width:200px; height:200px;" alt="Client C">
+                            <p class="mb-2">"Great quality work and fast delivery. Will hire again."</p>
+                            <h6 class="fw-bold">Client C</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center bg-dark text-light py-3">
+            <p class="m-0">© 2025 Your S M MONIR HOSSAIN — All Rights Reserved</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
